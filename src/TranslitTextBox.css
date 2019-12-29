@@ -1,0 +1,37 @@
+.TranslitTextBox {
+  width: 100%;
+  border: 1px solid grey;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) 0 2px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.TranslitTextBox input {
+  width: 100%;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.73);
+  padding: 10px 5px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.TranslitTextBox ul {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid grey;
+}
+
+.TranslitTextBox ul::before {
+  content: "";
+}
+
+.TranslitTextBox li {
+  padding: 10px 5px;
+  cursor: pointer;
+}
+
+.TranslitTextBox li:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+}
