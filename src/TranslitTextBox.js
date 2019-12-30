@@ -11,9 +11,8 @@ export default class TranslitTextBox extends React.Component {
   }
 
   getSuggestions(value) {
-    fetch(
-      "http://146.148.85.67/processWordJSON?inString=" + value + "&lang=tamil"
-    )
+    var lang = document.cookie;
+    fetch("http://146.148.85.67/processWordJSON?inString=" + value + lang)
       .then(res => res.json())
       .then(json => {
         console.log(json.twords[0].options);
@@ -29,6 +28,15 @@ export default class TranslitTextBox extends React.Component {
     this.getSuggestions(value);
     this.setState(() => ({ suggestions, text: value }));
   };
+
+  setLanguageCookie = e => {
+    document.cookie = "&lang=" + e.target.value;
+  };
+
+  getLanguageCookie() {
+    var lang = document.cookie.replace("&lang=", "");
+    return lang;
+  }
 
   suggestionSelected(value) {
     this.setState(() => ({
@@ -55,6 +63,29 @@ export default class TranslitTextBox extends React.Component {
     const { text } = this.state;
     return (
       <div className="TranslitTextBox">
+        <div className="LanguageSelector">
+          Select a language!
+          <br />
+          <br />
+          <select
+            defaultValue={this.getLanguageCookie()}
+            onChange={this.setLanguageCookie}
+          >
+            <option value="" selected>
+              --
+            </option>
+            <option value="tamil">Tamil</option>
+            <option value="hindi">Hindi</option>
+            <option value="telugu">Telugu</option>
+            <option value="bengali">Bengali</option>
+            <option value="gujarati">Gujarati</option>
+            <option value="kannada">Kannada</option>
+            <option value="malayalam">Malayalam</option>
+            <option value="punjabi">Punjabi</option>
+          </select>
+          <br />
+          <hr />
+        </div>
         <input
           value={text}
           placeholder="Hey there! Enter a word!"
