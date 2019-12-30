@@ -24,8 +24,9 @@ export default class TranslitTextBox extends React.Component {
 
   onTextChanged = e => {
     const value = e.target.value;
+    var valueArray = value.split(/\s+/);
     let suggestions = [];
-    this.getSuggestions(value);
+    this.getSuggestions(valueArray[valueArray.length - 1]);
     this.setState(() => ({ suggestions, text: value }));
   };
 
@@ -39,10 +40,19 @@ export default class TranslitTextBox extends React.Component {
   }
 
   suggestionSelected(value) {
+    this.result += value + " ";
+    var res = this.result.replace("undefined", "");
+    // let res;
+    // if (document.getElementById("textbox").getAttribute("value") === null) {
+    //   res += value;
+    // } else {
+    //   res += " " + value;
+    // }
     this.setState(() => ({
-      text: value + " ",
+      text: res,
       suggestions: []
     }));
+    document.getElementById("textbox").focus();
   }
 
   renderSuggestions() {
@@ -86,7 +96,8 @@ export default class TranslitTextBox extends React.Component {
           <br />
           <hr />
         </div>
-        <input
+        <textarea
+          id="textbox"
           value={text}
           placeholder="Hey there! Enter a word!"
           onInput={this.onTextChanged}
