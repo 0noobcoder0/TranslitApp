@@ -16,12 +16,12 @@ INSTALLATION GUIDE :
   
   >Open command prompt and follow the below instructions.
   
-  >To set directory => cd <directory>
+  >To set directory => cd "directory"
   
   >To clone repo => git clone -b master https://github.com/0noobcoder0/TranslitApp-.git
   
 2. Open VS Code and open the directory where the repo is cloned.
-3. Go to Terminal > New Terminal > npm start(Dev Build) or npm run-scripts build(Production Build).
+3. Go to Terminal > New Terminal > npm start(Dev Build) or npm run build(Production Build).
 4. The app will be hosted to localhost and a browser window will appear.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 INSTRUCTIONS : 
