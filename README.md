@@ -4,17 +4,21 @@ REFERENCE : https://www.youtube.com/watch?v=NnpISZANByg
 ---------------------------------------------------------------------------------------------------------------------------------------------
 Prerequisites : 
 
-VS Code - https://code.visualstudio.com/
-Node.js (Node Package Manager) - https://nodejs.org/en/download/
-Git SCM - https://git-scm.com/ 
+>VS Code - https://code.visualstudio.com/
+
+>Node.js (Node Package Manager) - https://nodejs.org/en/download/
+
+>Git SCM - https://git-scm.com/ 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 INSTALLATION GUIDE :
 
 1. After installing the prerequisites, clone the repository in local directory.
   
-  Open command prompt and follow the below instructions.
-  To set directory => cd <directory>
-  To clone repo => git clone -b master https://github.com/0noobcoder0/TranslitApp-.git
+  >Open command prompt and follow the below instructions.
+  
+  >To set directory => cd <directory>
+  
+  >To clone repo => git clone -b master https://github.com/0noobcoder0/TranslitApp-.git
   
 2. Open VS Code and open the directory where the repo is cloned.
 3. Go to Terminal > New Terminal > npm start(Dev Build) or npm run-scripts build(Production Build).
