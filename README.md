@@ -22,3 +22,4 @@ INSTRUCTIONS :
 2. Enter the text to translate in the textarea and click on the desired suggestion.
 3. Continue typing to get suggestions and so on.
 ---------------------------------------------------------------------------------------------------------------------------------------------
+![Uploading React App - Mozilla Firefox 31-12-2019 18_12_21.png…]()
