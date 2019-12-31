@@ -4,7 +4,11 @@ REFERENCE : https://www.youtube.com/watch?v=NnpISZANByg
 ---------------------------------------------------------------------------------------------------------------------------------------------
 INSTALLATION GUIDE :
 
-Prerequisites : VS Code,  Node.js (Node Package Manager)
+Prerequisites : 
+
+VS Code - https://code.visualstudio.com/
+Node.js (Node Package Manager) - https://nodejs.org/en/download/
+Git SCM - https://git-scm.com/ 
 
 1. After installing the prerequisites, clone the repository in local directory.
   
