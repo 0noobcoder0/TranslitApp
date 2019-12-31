@@ -22,4 +22,5 @@ INSTRUCTIONS :
 2. Enter the text to translate in the textarea and click on the desired suggestion.
 3. Continue typing to get suggestions and so on.
 ---------------------------------------------------------------------------------------------------------------------------------------------
-
+SCREENSHOT :
+![React App - Mozilla Firefox 31-12-2019 18_12_21](https://user-images.githubusercontent.com/46084667/71622117-a6973580-2bf9-11ea-9abf-38be8458bae3.png)
