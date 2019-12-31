@@ -4,7 +4,7 @@ REFERENCE : https://www.youtube.com/watch?v=NnpISZANByg
 ---------------------------------------------------------------------------------------------------------------------------------------------
 INSTALLATION GUIDE :
 
-Prerequisites : VS Code or any other editor,  Node.js (Node Package Manager)
+Prerequisites : VS Code,  Node.js (Node Package Manager)
 
 1. After installing the prerequisites, clone the repository in local directory.
   
